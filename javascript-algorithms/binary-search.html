@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Algorithm | Binary Search</title>
+</head>
+<body>
+  <h1>Binary Search</h1>
+    <p>Performing a linear and binary search for the prime number 73 in the following array:</p>
+    <p>Prime numbers array: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]</p>
+    <p id="linear-search-results">&nbsp;</p>
+    <p id="binary-search-results">&nbsp;</p>
+  <script type="text/javascript" src="binarySearch.js"></script>
+  <script>
+  	var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+  	var result = doSearch(primes, 73);
+  	document.getElementById("linear-search-results").innerHTML = "Linear search result: Found prime at index " + result.index + " with " + result.attempts + " attempts.<br/>";
+  	var binaryResult = binarySearch(primes, 73);
+    document.getElementById("binary-search-results").innerHTML = "Binary search result: Found prime at index " + binaryResult.index + " with " + binaryResult.attempts + " attempts.";
+	</script>
+</body>
+</html>
