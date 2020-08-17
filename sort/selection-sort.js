@@ -1,10 +1,12 @@
-const selectSort = (arr) => {
+selectionSort = (arr) => {
 
-  for (let i = 0; i < arr.length - 1; i++) {
+  const arrayLength = arr.length;
+
+  for (let i = 0; i < arrayLength - 1; i++) {
     let minIndex = i;
     let temp;
 
-    for (let j = i + 1; j < arr.length; j++) {
+    for (let j = i + 1; j < arrayLength; j++) {
       if (arr[minIndex] > arr[j]) {
         minIndex = j;
       }
