@@ -27,6 +27,4 @@ const isUnique = (s) => {
 console.log(isUnique('s') === true);
 console.log(isUnique('') === true);
 console.log(isUnique('ss') === false);
-console.log(isUnique('stories') === false);
-console.log(isUnique('rainbows') === true);
-console.log(isUnique('chirpingmermaid') === false);
+console.log(isUnique('patterns') === false);
